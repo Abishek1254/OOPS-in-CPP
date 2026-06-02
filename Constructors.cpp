@@ -57,9 +57,9 @@ class Customer {
     // //     cout<<"Destructor called!"<<endl;
     // // }
 
-    // ~Customer(){
-    //     cout<<"Destructor : "<<name<<endl;
-    // }
+    ~Customer(){
+        cout<<"Destructor : "<<name<<endl;
+    }
 };
 
 // inline constructor definition -outside the class
@@ -106,13 +106,10 @@ int main() {
     // cout<<"Balance : "<<c2.balance<<endl;
     // //cout<<"Data : "<<*(c2.data)<<endl;
     
-    Customer c2=c1;
-    cout<<"Customer details of c2 (copied from c1) : "<<endl;
-    cout<<"Name : "<<c2.name<<endl;
-    cout<<"Account No : "<<c2.account_no<<endl;
-    cout<<"Balance : "<<c2.balance<<endl;
+
     //default copy constructor 
     // Customer c3=c2;  //Copying c2 to c3
+    // Customer c3(c2);  //Copying c2 to c3
     // cout<<"Customer details of c3 (copied from c2) : "<<endl;
     // cout<<"Account No : "<<c3.account_no<<endl;
     // cout<<"Balance : "<<c3.balance<<endl;
@@ -132,7 +129,7 @@ int main() {
 
 
     // constructor and destructor call order
-    //Customer a("1"),b("2"),c("3");
-    //cout<<endl;
+    Customer a("1"),b("2"),c("3");
+    cout<<endl;
     
 }

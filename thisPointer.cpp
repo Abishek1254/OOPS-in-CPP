@@ -32,7 +32,7 @@ A obj;
 obj.set(10);
 
 B ob;
-ob.set(5).set(10).set(15);
+ob.set(5).set(10).set(15).set(20);
 cout<<ob.x;
 
 

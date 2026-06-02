@@ -29,6 +29,6 @@ int main() {
     Person p1("Alice", 20);
     Person p2 = p1.withAge(25); // creates new object
 
-    cout << p1.getName() << " is " << p1.getAge() << endl;
-    cout << p2.getName() << " is " << p2.getAge() << endl;
+    cout << p1.getName() << " is " << p1.getAge() << " years old." << endl;
+    cout << p2.getName() << " is " << p2.getAge() << " years old." << endl;
 }

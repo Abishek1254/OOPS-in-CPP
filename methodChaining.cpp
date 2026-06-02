@@ -31,22 +31,24 @@ public:
     }
 };
 
+
 // this is a pointer to the current object
 // so *this means the object itself , Returning *this lets the next function run on the same object.
 
 int main() {
-    Number num1;
-    Number num2= num1.add(5);
-    Number num3= num2.multiply(3);
-    Number num4= num3.add(2);
-    Number num5= num4.add(4);
-    num1.show();
-    num2.show();
-    num3.show();
-    num4.show();
-    num5.show();
+    // Number num1;
+    // Number num2= num1.add(5);
+    // Number num3= num2.multiply(3);
+    // Number num4= num3.add(2);
+    // Number num5= num4.add(4);
+    // num1.show();
+    // num2.show();
+    // num3.show();
+    // num4.show();
+    // num5.show();
 
     Number obj;
     obj.add(5).multiply(3).add(2).add(4);  // method chaining
     obj.show();
+
 }
